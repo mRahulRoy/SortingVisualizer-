@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visulaizer</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <h2>Sorting Visulaizer</h2>
+            </div>
+        </nav>
+
+
+        <div class="menu flex">
+
+            <select name="algoLists" id="select">
+                <option value="Bubble Sort">Bubble Sort(DEFAULT)</option>
+                <option value="Insertion Sort">Insertion Sort</option>
+                <option value="Selection Sort">Selection Sort</option>
+                <option value="Quick Sort">Quick Sort</option>
+                <option value="Merge Sort">Merge Sort</option>
+            </select>
+
+
+            <div class="speedAndSize flex">
+                <div class="size flex">
+                    <p>Array Size</p>
+                    <input type="range" min="10" max="143" value="30" id="arrSize" oninput="getArraySize(value)">
+                </div>
+                <div class="speed flex">
+                    <p>Speed</p>
+                    <input type="range" name="" id="">
+                </div>
+                <button>Sort Array</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div id="arrayContainer" class="">
+
+        </div>
+    </section>
+
+
+    <script src="javaScipt/index.js"></script>
+</body>
+
+</html>

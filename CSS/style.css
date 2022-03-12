@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+
+html {
+    font-size: 10px;
+
+}
+
+body {
+    background-color: rgb(35, 47, 62);
+    height: auto;
+    /* border: 2px solid wheat; */
+}
+
+header nav .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+
+/* utility class */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu {
+    height: 50px;
+    gap: 20px;
+    /* border: 2px solid gold; */
+    margin-bottom: 30px;
+}
+
+header .menu select {
+    width: 110px;
+    height: 30px;
+    text-align: center;
+}
+
+header .menu .speedAndSize {
+    height: 50px;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+header .menu .speedAndSize .size,
+.speed {
+    gap: 10px;
+}
+
+header .menu .speedAndSize .size p,
+.speed p {
+    color: white;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header .menu .speedAndSize button {
+    width: 110px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/* styling array conatainer */
+.main {
+    /* border: 2px solid white; */
+}
+
+.main #arrayContainer .bar {
+    /* border: 1px solid wheat; */
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute;
+     bottom: 0; */
+    /* width: auto; */
+    /* background-color: rgb(51,51,51); */
+    background-color: black;
+    /* box-shadow: 10px 10px 5px white; */
+    box-shadow: 2px 1px 1px blue;
+    /* border-top-left-radius: 10px;
+     border-top-right-radius: 10px; */
+}
+
+.main #arrayContainer {
+    height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+/* media queries starts over here */
+@media (max-width:699px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    header .menu .speedAndSize .speed p {
+        font-size: 1.6rem;
+        margin-right: 17px;
+    }
+    header .menu select{
+        /* border: 2px solid white; */
+        
+    }
+    header .menu {
+        height: 170px;
+        justify-content: space-evenly;
+        /* border: 2px solid white; */
+        align-items: center;
+    }
+
+    header .menu .speedAndSize {
+        flex-direction: column;
+        height: 126px;
+        width: 271px;
+        /* border: 2px solid wheat; */
+        gap: 19px;
+        align-items: flex-start;
+    }
+
+    
+}
