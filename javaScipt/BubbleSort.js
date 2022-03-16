@@ -1,16 +1,14 @@
-let sortBtn = document.getElementById("sortBtn");
-let select = document.getElementById("select");
+
+
 let speedSlider = document.getElementById("speedSlider");
+let delay = 1000;
+
+
 
 speedSlider.addEventListener("click", sortSpeed);
-select.addEventListener("input", () => {
-    console.log(select.value);
-})
-
-
 function sortSpeed() {
-   
-    return speedSlider.value;
+    delay = 1720 - parseInt(speedSlider.value);
+    console.log(delay);
    
 }
 
@@ -19,7 +17,7 @@ function sortSpeed() {
 
 let arraySizeSlider = document.getElementById("arrSize");
 
-sortBtn.addEventListener("click", bubbleSort);
+
 
 function swap(element1, element2) {
     return new Promise((resolve, reject) => {
@@ -36,7 +34,7 @@ function swap(element1, element2) {
                 element2.innerHTML = temp;
                 // arrayContainer.insertBefore(element2,element1);
                 resolve();
-            }, sortSpeed()) // sortSpeed function gives the delay by taking input from the speed slider.
+            }, delay) // sortSpeed function gives the delay by taking input from the speed slider.
         });
     });
 }
@@ -45,6 +43,7 @@ async function bubbleSort() {
     let bars = document.querySelectorAll(".bar");
     sortBtn.disabled = true;
     arraySizeSlider.disabled = true;
+    select.disabled = true;
     for (let i = 0; i < bars.length; i++) {
         for (let j = 0; j < bars.length - i - 1; j++) {
             bars[j].style.backgroundColor = "red";
@@ -53,7 +52,7 @@ async function bubbleSort() {
             await new Promise((resolve, reject) => {
                 setTimeout(() => {
                     resolve("3 seconds over");
-                }, sortSpeed()); //sortSpeed function gives the delay by taking input from the speed slider.
+                }, delay); //sortSpeed function gives the delay by taking input from the speed slider.
             })
 
 
@@ -73,5 +72,6 @@ async function bubbleSort() {
     }
     sortBtn.disabled = false;
     arraySizeSlider.disabled = false;
+    select.disabled = false;
 }
 

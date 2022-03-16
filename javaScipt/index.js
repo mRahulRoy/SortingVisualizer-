@@ -29,5 +29,17 @@ function getArraySize(value) {
 generateArray();
 
 
+let select = document.getElementById("select");
+select.addEventListener("input", () => {
+    console.log(select.value)
+});
 
-
+let sortBtn = document.getElementById("sortBtn");
+sortBtn.addEventListener("click", ()=>{
+    if(select.value == "Bubble Sort"){
+        bubbleSort();
+    }
+    else if(select.value== "Selection Sort"){
+        selectionSort();
+    }
+});
