@@ -32,13 +32,13 @@
             <div class="speedAndSize flex">
                 <div class="size flex">
                     <p>Array Size</p>
-                    <input type="range" min="10" max="143" value="30" id="arrSize" oninput="getArraySize(value)">
+                    <input type="range" min="5" max="143" value="30" id="arrSize" oninput="getArraySize(value)">
                 </div>
                 <div class="speed flex">
                     <p>Speed</p>
-                    <input type="range" name="" id="">
+                    <input type="range" min="20" max="3000" value="300" id="speedSlider" >
                 </div>
-                <button>Sort Array</button>
+                <button  id="sortBtn">Sort Array</button>
             </div>
         </div>
     </header>
@@ -51,6 +51,7 @@
 
 
     <script src="javaScipt/index.js"></script>
+    <script src="javaScipt/BubbleSort.js"></script>
 </body>
 
 </html>

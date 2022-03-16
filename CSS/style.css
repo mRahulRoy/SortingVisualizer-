@@ -80,25 +80,15 @@ header .menu .speedAndSize button {
 
 
 /* styling array conatainer */
-.main {
-    /* border: 2px solid white; */
-}
 
 .main #arrayContainer .bar {
-    /* border: 1px solid wheat; */
     color: wheat;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: absolute;
-     bottom: 0; */
-    /* width: auto; */
-    /* background-color: rgb(51,51,51); */
     background-color: black;
-    /* box-shadow: 10px 10px 5px white; */
     box-shadow: 2px 1px 1px blue;
-    /* border-top-left-radius: 10px;
-     border-top-right-radius: 10px; */
+    transition: 1s all ease
 }
 
 .main #arrayContainer {
@@ -106,7 +96,7 @@ header .menu .speedAndSize button {
     position: relative;
     display: flex;
     justify-content: center;
-    /* background-color: red; */
+    transition: 0.4s all ease
 }
 
 /* media queries starts over here */
@@ -120,10 +110,7 @@ header .menu .speedAndSize button {
         font-size: 1.6rem;
         margin-right: 17px;
     }
-    header .menu select{
-        /* border: 2px solid white; */
-        
-    }
+
     header .menu {
         height: 170px;
         justify-content: space-evenly;
@@ -135,10 +122,9 @@ header .menu .speedAndSize button {
         flex-direction: column;
         height: 126px;
         width: 271px;
-        /* border: 2px solid wheat; */
         gap: 19px;
         align-items: flex-start;
     }
 
-    
+
 }
