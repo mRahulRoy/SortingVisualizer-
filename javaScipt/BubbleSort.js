@@ -5,7 +5,7 @@ let delay = 1000;
 
 
 // This listens to the event when a users increases or decreses the speed of the range slider.
-speedSlider.addEventListener("click", sortSpeed);
+// this function works on onchange event
 function sortSpeed() {
     delay = 1720 - parseInt(speedSlider.value);
     console.log(delay);

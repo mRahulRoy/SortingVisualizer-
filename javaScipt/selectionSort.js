@@ -13,7 +13,7 @@ function swapSelctionSort(element1, element2) {
 
 
                 resolve();
-            }, delay - 100)
+            }, delay)
         });
     });
 }
