@@ -1,7 +1,7 @@
 
 
 let speedSlider = document.getElementById("speedSlider");
-let delay = 1000;
+let delay = 3000;
 
 
 
