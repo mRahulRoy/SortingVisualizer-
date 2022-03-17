@@ -128,3 +128,19 @@ header .menu .speedAndSize button {
 
 
 }
+
+@media (max-width: 400px){
+    
+    header .menu{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      
+        
+    }
+    header .menu .speedAndSize{
+    
+        justify-content:center;
+        align-items: center;
+    }
+}
