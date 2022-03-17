@@ -22,10 +22,10 @@
 
             <select name="algoLists" id="select">
                 <option value="Bubble Sort">Bubble Sort</option>
-                <option value="Insertion Sort">Insertion Sort</option>
+                <!-- <option value="Insertion Sort">Insertion Sort</option> -->
                 <option value="Selection Sort">Selection Sort</option>
-                <option value="Quick Sort">Quick Sort</option>
-                <option value="Merge Sort">Merge Sort</option>
+                <!-- <option value="Quick Sort">Quick Sort</option> -->
+                <!-- <option value="Merge Sort">Merge Sort</option> -->
             </select>
 
 
@@ -36,7 +36,7 @@
                 </div>
                 <div class="speed flex">
                     <p>Speed</p>
-                    <input type="range" min="20" max="3000" value="300" id="speedSlider" >
+                    <input type="range" min="20" max="3000" value="300" id="speedSlider" onchange="sortSpeed(value)" >
                 </div>
                 <button  id="sortBtn">Sort Array</button>
             </div>

@@ -1,7 +1,5 @@
 let arrayContainer = document.getElementById("arrayContainer");
 let selectedOption = document.getElementById("select");
-console.log(selectedOption[2].value);
-
 
 
 let margin_size = 0;
@@ -43,3 +41,5 @@ sortBtn.addEventListener("click", ()=>{
         selectionSort();
     }
 });
+
+
