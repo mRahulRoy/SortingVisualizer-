@@ -20,11 +20,15 @@ function generateArray(size = 5) {
 
 }
 
-function getArraySize(value) {
+
+let arraySize = document.getElementById("arrSize");
+
+ function changeBars() {
     arrayContainer.innerHTML = "";
-    generateArray(value);
+    generateArray(arraySize.value);
+    console.log("Size of arary is: ",arraySize.value)
 }
-generateArray();
+
 
 
 let select = document.getElementById("select");
@@ -40,6 +44,10 @@ sortBtn.addEventListener("click", ()=>{
     else if(select.value== "Selection Sort"){
         selectionSort();
     }
+    else if(select.value== "Insertion Sort"){
+        insertionSort();
+    }
 });
 
 
+generateArray();

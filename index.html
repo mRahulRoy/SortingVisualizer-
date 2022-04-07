@@ -22,7 +22,7 @@
 
             <select name="algoLists" id="select">
                 <option value="Bubble Sort">Bubble Sort</option>
-                <!-- <option value="Insertion Sort">Insertion Sort</option> -->
+                <option value="Insertion Sort">Insertion Sort</option>
                 <option value="Selection Sort">Selection Sort</option>
                 <!-- <option value="Quick Sort">Quick Sort</option> -->
                 <!-- <option value="Merge Sort">Merge Sort</option> -->
@@ -32,7 +32,7 @@
             <div class="speedAndSize flex">
                 <div class="size flex">
                     <p>Array Size</p>
-                    <input type="range" min="5" max="143" value="30" id="arrSize" oninput="getArraySize(value)">
+                    <input type="range" min="5" max="143" value="0" id="arrSize" oninput="changeBars()">
                 </div>
                 <div class="speed flex">
                     <p>Speed</p>
@@ -53,6 +53,8 @@
     <script src="javaScipt/index.js"></script>
     <script src="javaScipt/BubbleSort.js"></script>
     <script src="javaScipt/selectionSort.js"></script>
+    <script src="javaScipt/insertionSort.js"></script>
+    <script src="javaScipt/mergeSort.js"></script>
 </body>
 
 </html>
